@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def pow(a, b):
     result = 1
-    if  a == 0:
+    if a == 0:
         return
     if b < 0:
         power = -b
