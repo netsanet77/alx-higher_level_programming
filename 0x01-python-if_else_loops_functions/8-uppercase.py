@@ -7,4 +7,3 @@ def uppercase(str):
             i = chr(c)
         print("{:s}".format(i), end="")
     print("")
-
