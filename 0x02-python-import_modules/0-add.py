@@ -4,4 +4,4 @@ a = 1
 b = 2
 if __name__ != '__import__':
     s = add(a, b)
-print(f"{a:d} + {b:d} = {s:d}")
+print("{:d} + {:d} = {:d}".format(a, b, s))
