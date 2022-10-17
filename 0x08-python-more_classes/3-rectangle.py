@@ -61,5 +61,6 @@ class Rectangle:
         for i in range(0, self.__height):
             for j in range(0, self.__width):
                 rectangle += "#"
-            rectangle += "\n"
+            if i != self.__height - 1:
+                rectangle += "\n"
         return rectangle
