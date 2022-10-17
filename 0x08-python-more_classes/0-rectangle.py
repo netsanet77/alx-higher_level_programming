@@ -3,4 +3,6 @@
 
 
 class Rectangle:
+    """Representing rectangle"""
+
     pass
