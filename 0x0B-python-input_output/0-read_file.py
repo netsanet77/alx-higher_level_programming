@@ -5,4 +5,3 @@ def read_file(filename=""):
     with open(filename) as f:
         r = f.read()
         print(r, end="")
-    f.close
