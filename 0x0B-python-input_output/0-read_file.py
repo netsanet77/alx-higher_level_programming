@@ -4,4 +4,3 @@ def read_file(filename=""):
     with open(filename, encoding="utf-8") as f:
         r = f.read()
         print(r, end="")
-    f.close
