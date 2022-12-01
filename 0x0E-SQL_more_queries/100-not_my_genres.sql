@@ -13,5 +13,5 @@ WHERE tv_genres.id NOT IN
 	ON tv_genres.id = tv_show_genres.genre_id
 	INNER JOIN tv_show
 	ON tv_shows.id = tv_show_genres.show_id
-	WHERE tv_show.title "Dexter")
+	WHERE tv_show.title = "Dexter")
 ORDER BY tv_genres.name
