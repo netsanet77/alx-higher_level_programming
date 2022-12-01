@@ -1,0 +1,6 @@
+-- creates the database hbtn_0d_2 and the user_0d_2 if they don't exist
+-- user_0d_2 should have only SELECT privilege in the database hbtn_0d_2
+-- the user_0d_2 password shoul be set to user_0d_2_pwd
+CREATE DATABASE hbtn_0d_2;
+CREATE USER 'user_0d_2'@'localhost' IDENTIFIED BY 'user_0d_2_pwd';
+GRANT SELECT ON hbtn_0d_2.* TO 'user_0d_2'@'localhost';
