@@ -10,7 +10,7 @@ if __name__ == "__main__":
     datab = MySQLdb.connect(host="localhost", user=argv[1], passwd=argv[2],
                             db=argv[3], port=3306)
     c = datab.cursor()
-    c.execute("""SELECT * FROM states WHERE name = '{}' ORDER BY
+    c.execute("""SELECT * FROM states WHERE name = BINARY '{}' ORDER BY
               states.id ASC""".format(argv[4]))
     rows = c.fetchall()
     for row in rows:
