@@ -15,10 +15,12 @@ if __name__ == "__main__":
             WHERE states.name = BINARY %s \
             ORDER BY cities.id ASC""", (argv[4],))
     rows = c.fetchall()
-    c = 0
+    count = 0
     for row in rows:
-        if c != 0:
+        if count != 0:
             print(", ", end="")
         print("%s" % row, end="")
-        c += 1
+        count += 1
     print()
+    c.close()
+    datab.close()

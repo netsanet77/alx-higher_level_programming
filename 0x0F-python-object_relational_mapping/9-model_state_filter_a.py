@@ -18,3 +18,4 @@ if __name__ == "__main__":
             State.id).all()
     for row in rows:
         print("{}: {}".format(row.id, row.name))
+    session.close()

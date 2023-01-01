@@ -18,3 +18,4 @@ if __name__ == "__main__":
         print("{}: {}".format(firstrow.id, firstrow.name))
     else:
         print("Nothing")
+    session.close()
