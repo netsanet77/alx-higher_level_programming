@@ -11,6 +11,5 @@ exports.esrever = function (list) {
     i -= 1;
     j += 1;
   }
-  console.log(temp.length);
   return temp;
 };
