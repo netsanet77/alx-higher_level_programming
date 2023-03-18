@@ -3,7 +3,7 @@ exports.esrever = function (list) {
   let i = 0;
   let j = 0;
   const temp = [];
-  while (i < list.length) {
+  while (i < list.length - 1) {
     i++;
   }
   while (i >= 0) {
@@ -11,5 +11,6 @@ exports.esrever = function (list) {
     i -= 1;
     j += 1;
   }
+  console.log(temp.length);
   return temp;
 };
